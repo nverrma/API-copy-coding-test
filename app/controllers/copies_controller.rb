@@ -3,9 +3,7 @@ class CopiesController < ApplicationController
   before_action :load_data, except: [:refresh]
 
   def copy
-    if params[:since].present?
       render json: load_data, status: 200
-    else
   end
 
   def fetch_key_data

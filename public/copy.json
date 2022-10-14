@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "id": "recIF3sqkWhFkJXbQ",
+      "createdTime": "2022-10-12T07:43:03.000Z",
+      "fields": {
+        "key": "intro.updated_at",
+        "copy": "Intro updated on {updated_at, datetime}"
+      }
+    },
+    {
+      "id": "recg0sPHRxRLI5xY4",
+      "createdTime": "2022-10-13T18:19:43.000Z",
+      "fields": {
+        "key": "time",
+        "copy": "It is {time, datetime}"
+      }
+    },
+    {
+      "id": "rechKf8kWnHnCntX3",
+      "createdTime": "2022-10-12T07:41:01.000Z",
+      "fields": {
+        "key": "greetingVIP",
+        "copy": "{greeting} You're on the VIP plan."
+      }
+    },
+    {
+      "id": "reclNplxQOLwFjNEh",
+      "createdTime": "2022-10-12T07:41:01.000Z",
+      "fields": {
+        "key": "greeting",
+        "copy": "Hi {name}, welcome to {app}!"
+      }
+    },
+    {
+      "id": "rectsoUDXpImY675w",
+      "createdTime": "2022-10-12T07:41:01.000Z",
+      "fields": {
+        "key": "intro.created_at",
+        "copy": "Intro created on {created_at, datetime}"
+      }
+    }
+  ]
+}

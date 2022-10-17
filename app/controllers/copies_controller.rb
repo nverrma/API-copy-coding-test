@@ -1,9 +1,10 @@
 class CopiesController < ApplicationController
   include ParamsHandler
   include ExtractKeys
-  # before_action :validate_params
+
   before_action :load_data, except: [:refresh]
 
+  # get all the copy table data from airtable
   def copy
     if params[:since].present?
       response = FilterDataService.new(params[:since], load_data).call
@@ -13,6 +14,7 @@ class CopiesController < ApplicationController
     end
   end
 
+  # get the data according to copy key and params
   def fetch_key_data
     begin
       params_handler(params)
@@ -27,6 +29,7 @@ class CopiesController < ApplicationController
     end
   end
 
+  # update the json file data with the changes perform on air table
   def refresh
     RefreshDataService.call
     render json: 'Successfully updated json data', status: 200

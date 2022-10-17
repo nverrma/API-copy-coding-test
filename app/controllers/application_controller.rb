@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
-  before_action :fetch_key_data_error_handler, except: [:refresh, :copy]
+  before_action :fetch_key_data_error_handler, only: [:fetch_key_data]
+
   def response_format(data)
     { value: data }
   end
